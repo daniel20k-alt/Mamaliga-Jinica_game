@@ -59,6 +59,9 @@
                                                 <include reference="LKL-MK-4dP"/>
                                             </mask>
                                         </variation>
+                                        <connections>
+                                            <action selector="dealTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y61-pS-u0X"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <variation key="heightClass=compact-widthClass=compact" spacing="10"/>
