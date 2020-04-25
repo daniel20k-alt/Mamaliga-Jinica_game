@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,133 +16,112 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crystal-minerals-background_1284-5712" translatesAutoresizingMaskIntoConstraints="NO" id="7QF-aY-L7E">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="7QF-aY-L7E">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💎Lucky Gemstones 💎 " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2h-pM-jFv">
-                                <rect key="frame" x="15" y="30" width="345" height="40.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text box for msg" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f2h-pM-jFv">
+                                <rect key="frame" x="70.5" y="10" width="234.5" height="40.5"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="34"/>
                                 <color key="textColor" red="0.15720674395561218" green="0.15680971741676331" blue="0.57142990827560425" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="wdp-1f-vz4" userLabel=" Cards and Button Stack View">
-                                <rect key="frame" x="52.5" y="182.5" width="270" height="342"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="gfq-vH-9RE" userLabel="Cards Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="270" height="170"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card4" translatesAutoresizingMaskIntoConstraints="NO" id="4mG-MX-fnR">
-                                                <rect key="frame" x="0.0" y="0.0" width="120" height="170"/>
-                                            </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="card6" translatesAutoresizingMaskIntoConstraints="NO" id="Nfg-bd-Dz4">
-                                                <rect key="frame" x="150" y="0.0" width="120" height="170"/>
-                                            </imageView>
-                                        </subviews>
-                                    </stackView>
-                                    <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTr-Nb-vr8" userLabel="Deal Button">
-                                        <rect key="frame" x="75" y="180" width="120" height="162"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="120" id="LKL-MK-4dP"/>
-                                        </constraints>
-                                        <state key="normal" image="deal_button">
-                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="LKL-MK-4dP"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=compact-widthClass=compact">
-                                            <mask key="constraints">
-                                                <include reference="LKL-MK-4dP"/>
-                                            </mask>
-                                        </variation>
-                                        <connections>
-                                            <action selector="dealTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y61-pS-u0X"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <variation key="heightClass=compact-widthClass=compact" spacing="10"/>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="czk-dE-8HY" userLabel="Player Score Stack View">
-                                <rect key="frame" x="20" y="578.5" width="47" height="68.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxh-PB-WOw">
-                                        <rect key="frame" x="0.0" y="0.0" width="47" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Mg-0N-SxR">
-                                        <rect key="frame" x="0.0" y="20.5" width="25" height="48"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="AQS-Bj-uXc" userLabel="CPU Score Stack View">
-                                <rect key="frame" x="320.5" y="578.5" width="34.5" height="68.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cee-r2-4ky">
-                                        <rect key="frame" x="0.0" y="0.0" width="34.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Soa-K5-9Vj">
-                                        <rect key="frame" x="9.5" y="20.5" width="25" height="48"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card4" translatesAutoresizingMaskIntoConstraints="NO" id="4mG-MX-fnR" userLabel="PlayerCard1">
+                                <rect key="frame" x="232" y="581" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card4" translatesAutoresizingMaskIntoConstraints="NO" id="xcv-hj-ecV" userLabel="PlayerCard2">
+                                <rect key="frame" x="292" y="581" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card4" translatesAutoresizingMaskIntoConstraints="NO" id="nfp-ei-QI6" userLabel="PlayerCard3">
+                                <rect key="frame" x="171" y="581" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card4" translatesAutoresizingMaskIntoConstraints="NO" id="zv0-Hj-XfA" userLabel="PlayerCard4">
+                                <rect key="frame" x="111" y="581" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card4" translatesAutoresizingMaskIntoConstraints="NO" id="caO-ZT-fjM" userLabel="PlayerCard5">
+                                <rect key="frame" x="50" y="581" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card4" translatesAutoresizingMaskIntoConstraints="NO" id="uun-2o-mhG" userLabel="PlayerCard6">
+                                <rect key="frame" x="-10" y="581" width="80" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="Nfg-bd-Dz4" userLabel="CPUcard1">
+                                <rect key="frame" x="127" y="58" width="100" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="cdv-mT-5ms" userLabel="CPUcard2">
+                                <rect key="frame" x="50" y="43" width="100" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="ztY-d2-x1y" userLabel="CPUcard3">
+                                <rect key="frame" x="220" y="47" width="100" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="Fer-MI-ewh" userLabel="Coz Stack Front">
+                                <rect key="frame" x="-1" y="326" width="100" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card17" translatesAutoresizingMaskIntoConstraints="NO" id="QdL-h8-KcQ" userLabel="Coz Stack Back">
+                                <rect key="frame" x="0.0" y="248" width="100" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="249" verticalHuggingPriority="249" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTr-Nb-vr8" userLabel="Deal Button">
+                                <rect key="frame" x="302" y="314" width="57" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="LKL-MK-4dP"/>
+                                </constraints>
+                                <state key="normal" image="deal_button">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="LKL-MK-4dP"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="LKL-MK-4dP"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="dealTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y61-pS-u0X"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AQS-Bj-uXc" secondAttribute="bottom" constant="20" id="04v-Xc-WDS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AQS-Bj-uXc" secondAttribute="trailing" constant="20" id="0v3-yq-3Yh"/>
-                            <constraint firstAttribute="bottom" secondItem="wdp-1f-vz4" secondAttribute="bottom" constant="10" id="BSj-DJ-YEV"/>
                             <constraint firstAttribute="bottom" secondItem="7QF-aY-L7E" secondAttribute="bottom" id="Gdr-7l-hUq"/>
                             <constraint firstItem="7QF-aY-L7E" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="T4Q-k1-brR"/>
                             <constraint firstAttribute="trailing" secondItem="7QF-aY-L7E" secondAttribute="trailing" id="Uwv-1l-KAl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="czk-dE-8HY" secondAttribute="bottom" constant="20" id="bQ9-VR-err"/>
                             <constraint firstItem="f2h-pM-jFv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bbq-6M-ZxD"/>
-                            <constraint firstItem="wdp-1f-vz4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="20" id="hpj-It-phJ"/>
-                            <constraint firstItem="czk-dE-8HY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qrW-Z0-vKY"/>
                             <constraint firstItem="f2h-pM-jFv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="t50-ZD-x5z"/>
                             <constraint firstItem="7QF-aY-L7E" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="vxf-Et-P1c"/>
-                            <constraint firstItem="wdp-1f-vz4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zp1-KU-ga0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="BSj-DJ-YEV"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=compact-widthClass=compact">
-                            <mask key="constraints">
-                                <include reference="BSj-DJ-YEV"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="leftImageView" destination="4mG-MX-fnR" id="JJu-AG-psm"/>
-                        <outlet property="leftScoreLabel" destination="8Mg-0N-SxR" id="pKF-6g-nLa"/>
                         <outlet property="rightImageView" destination="Nfg-bd-Dz4" id="nwy-zQ-axE"/>
-                        <outlet property="rightScoreLabel" destination="Soa-K5-9Vj" id="hta-MV-Vcd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+            <point key="canvasLocation" x="136.80000000000001" y="113.79310344827587"/>
         </scene>
     </scenes>
     <resources>
+        <image name="back" width="120" height="170"/>
+        <image name="background" width="584" height="585"/>
+        <image name="card17" width="120" height="170"/>
         <image name="card4" width="120" height="170"/>
-        <image name="card6" width="120" height="170"/>
-        <image name="crystal-minerals-background_1284-5712" width="626" height="626"/>
         <image name="deal_button" width="120" height="162"/>
     </resources>
 </document>
